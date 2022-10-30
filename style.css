@@ -403,7 +403,6 @@ section p {
   align-items: center;
 }
 .card_container {
-  display: ;
   column-count: 4;
   column-gap: 10px;
   max-width: fit-content;
@@ -438,6 +437,10 @@ section p {
   text-transform: uppercase;
   cursor: pointer;
 
+}
+
+.tag{
+  pointer-events: none;
 }
 
 .tag-js {
@@ -479,6 +482,15 @@ section p {
   color: #fff !important;
 }
 
+.tag-pp {
+  background-color: rgba(0,0,88,1) !important;
+  color: #fff !important;
+}
+
+.tag-ps {
+  background-color: rgba(0,29,52,1) !important;
+  color: #fff !important;
+}
 
 .card-body p {
   font-size: 13px;

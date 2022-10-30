@@ -30,7 +30,7 @@ header {
 header ul {
   text-transform: uppercase;
   font-size: large;
-  font-style: black;
+  font-style: #121212;
   list-style-type: none;
   margin: 0;
   padding: 5;
@@ -45,7 +45,7 @@ header li {
 header li a {
   display: block;
   padding: 8px;
-  color: black;
+  color: #121212;
   font-weight: 700;
   left: 50%;
 }
@@ -53,7 +53,7 @@ header li a {
 header li a:hover {
   transition-duration: 500ms;
   font-weight: 800;
-  color: black;
+  color: #121212;
 }
 
 header li a:not(:hover) {
@@ -73,7 +73,7 @@ section.white_background {
 }
 
 section.dark_background {
-  background-color: black;
+  background-color: #121212;
 }
 
 section.dark_background .title,
@@ -87,7 +87,7 @@ section.white_background .title,
 section.white_background .subtitle,
 section.white_background h3,
 section.white_background p {
-  color: black;
+  color: #121212;
 }
 
 
@@ -128,7 +128,7 @@ section p {
   color: whitesmoke;
   font-weight: 900;
   font-size: 9vw !important;
-  -webkit-text-stroke: 0.01em black;
+  -webkit-text-stroke: 0.01em #121212;
   overflow: hidden;
 }
 
@@ -222,7 +222,7 @@ section p {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid black;
+  border: 4px solid #121212;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -495,7 +495,7 @@ section p {
 .card-body p {
   font-size: 13px;
   padding: 10px 0 0 0;
-  color: black !important;
+  color: #121212 !important;
 }
 
 .card_button_span {
@@ -528,4 +528,64 @@ section p {
 .card_button:not(:hover) {
   transition-duration: 500ms;
 
+}
+
+/* FOOTER */
+
+.footer{
+  height: 60vh;
+  padding: 3rem 0 0 0; 
+}
+
+.footer_title{
+  color: #121212;
+  text-align: center;
+  font-weight: 800;
+  font-size: 80px;
+}
+
+.button_container{
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+}
+.btn_cv, .btn_go_top {
+  position: relative;
+  max-width: fit-content;
+  padding:35px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  color: #121212;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 1.2rem;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+}
+
+.btn_cv:hover, .btn_go_top:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.go_top_btn_container{
+  position: relative;
+  top: 30%;
+  display: flex;
+  left: 50%;
+  transform: translateX(-5%);
+}
+
+.text_sticky_bottom{
+  position: relative;
+
+
+}
+.text_bottom{
+  margin: 0;
+  padding-left: 50px ;
 }

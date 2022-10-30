@@ -33,7 +33,7 @@ header ul {
   font-style: black;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 5;
   overflow: hidden;
 }
 
@@ -54,7 +54,6 @@ header li a:hover {
   transition-duration: 500ms;
   font-weight: 800;
   color: black;
-  font-size: larger;
 }
 
 header li a:not(:hover) {
@@ -212,7 +211,7 @@ section p {
 .container {
   padding: 10px 40px;
   margin: initial;
-  width: 50%;
+  width: 30%;
   background-color: inherit;
 }
 
@@ -230,7 +229,7 @@ section p {
 }
 
 .left {
-  left: 0;
+  left: 20%;
 }
 
 .right {
@@ -310,11 +309,15 @@ section p {
   .right {
     left: 0%;
   }
+
+  .left {
+    left: 0;
+  }
 }
 
 /* Fourth section */
 
-#travel_language{
+#travel_language {
   display: flex;
 }
 
@@ -334,34 +337,36 @@ section p {
   z-index: 5;
 }
 
-.title_span{
+.title_span {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 90px;
 }
 
-.title_span .title{
+.title_span .title {
   position: absolute;
 }
-.title_hover{
+
+.title_hover {
   position: relative;
   color: transparent !important;
   transform: translateY(-12px);
   -webkit-text-stroke: 0.7px #000;
   z-index: 5;
-  
+
 }
 
-.text_span{
+.text_span {
   justify-content: center;
   align-items: center;
 }
 
-.title_span .text{
+.title_span .text {
   position: absolute;
 }
-.text_hover{
+
+.text_hover {
   position: relative;
   color: transparent !important;
   transform: translateY(-81px);
@@ -378,16 +383,137 @@ section p {
   transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
   background: whitesmoke;
   border: 15px solid #000;
-  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   pointer-events: none;
   margin: -150px 0 0 -150px;
 
 }
 
-#travel_language:hover #circle{
+#travel_language:hover #circle {
   opacity: 1;
   z-index: 2;
 }
 
 
+/* Fourth Section*/
+#portfolio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_container {
+  display: ;
+  column-count: 4;
+  column-gap: 10px;
+  max-width: fit-content;
+}
+
+.card {
+  margin: 0 10px 25px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px;
+  height: fit-content;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: fit-content;
+  font-weight: 500;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+}
+
+.tag-js {
+  background-color: rgb(247, 223, 30) !important;
+}
+
+.tag-php {
+  background-color: rgba(75, 86, 140, 1) !important;
+  color: #fff !important;
+}
+
+.tag-sql {
+  background-color: rgba(191, 74, 92, 1) !important;
+  color: #fff !important;
+}
+
+.tag-css {
+  background-color: rgba(0, 143, 209, 1) !important;
+  color: #fff !important;
+}
+
+.tag-angular {
+  background-color: rgba(214, 0, 46, 1) !important;
+  color: #fff !important;
+}
+
+.tag-arduino {
+  color: #fff !important;
+  background-color: rgba(0, 146, 151, 1) !important;
+}
+
+.tag-vb {
+  background-color: rgba(16, 59, 91, 1) !important;
+  color: #fff !important;
+}
+
+.tag-java {
+  background-color: rgba(225,30,35, 1) !important;
+  color: #fff !important;
+}
+
+
+.card-body p {
+  font-size: 13px;
+  padding: 10px 0 0 0;
+  color: black !important;
+}
+
+.card_button_span {
+  position: relative;
+  justify-content: center;
+
+}
+
+.card_button {
+  position: relative;
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 48px;
+  letter-spacing: .25px;
+  padding: 12px 24px;
+  text-decoration: none;
+}
+
+.card_button:hover {
+  transition-duration: 500ms;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.card_button:not(:hover) {
+  transition-duration: 500ms;
+
+}

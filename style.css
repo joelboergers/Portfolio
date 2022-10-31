@@ -14,6 +14,30 @@ body {
   overflow: hidden;
 }
 
+/* MOBILE*/
+.mobile_version{
+  visibility: hidden;
+}
+@media only screen and (max-width: 1300px) {
+  body{
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  header,section,footer {
+    visibility: hidden;
+  }
+  .mobile_version{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 300px;
+    visibility: visible;
+  }
+
+}
 
 /* HEADER */
 
@@ -344,9 +368,7 @@ section p {
   flex-direction: column;
 }
 
-.culture_content p {
-  padding: 0;
-}
+
 
 .img_file_span {
   display: flex;
@@ -365,22 +387,19 @@ section p {
 }
 
 .text_span {
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.title_span .text {
+.text_span .text {
   position: absolute;
-}
-
-.title_span .text_hover {
-  position: relative;
-  color: transparent !important;
-  -webkit-text-stroke: 0.7px #000;
   z-index: 5;
 }
+
+
 
 #circle {
   position: absolute;

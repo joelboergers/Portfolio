@@ -18,7 +18,7 @@ body {
 .mobile_version{
   visibility: hidden;
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 800px) {
   body{
     height: 100%;
     position: fixed;
@@ -93,29 +93,43 @@ section {
 }
 
 section.white_background {
-  padding: 0;
   overflow: hidden;
 }
 
 section.dark_background {
-  padding: 0;
   background-color: #121212;
 }
 
 section.dark_background .title,
 section.dark_background .subtitle,
+section.dark_background h2,
 section.dark_background h3,
+section.dark_background h4,
+section.dark_background h5,
 section.dark_background p {
   color: whitesmoke;
 }
 
 section.white_background .title,
 section.white_background .subtitle,
+section.white_background h2,
 section.white_background h3,
+section.white_background h4,
+section.white_background h5,
 section.white_background p {
   color: #121212;
 }
 
+section .subtitle,
+h2,
+h3,
+h4,
+h5,
+p {
+  text-align: left;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
 
 section .title {
   text-align: center;
@@ -123,17 +137,21 @@ section .title {
   font-size: 80px;
 }
 
-section .subtitle,
-h3,
-p {
-  text-align: left;
-  padding-left: 20vw;
-  padding-right: 20vw;
-}
-
 section .subtitle {
   font-weight: 600;
   font-size: 30px;
+}
+
+section h3{
+  font-size: 26px;
+}
+
+section h4{
+  font-size: 24px;
+}
+
+section h5{
+  font-size: 20px;
 }
 
 section p {
@@ -231,7 +249,6 @@ section p {
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -3px;
 }
 
 .container {
@@ -259,7 +276,7 @@ section p {
 }
 
 .right {
-  left: 50.5%;
+  left: 50.4%;
 }
 
 .left::before {
@@ -297,6 +314,9 @@ section p {
   background-color: white;
   position: relative;
   border-radius: 6px;
+}
+.content h2{
+  padding: 0;
 }
 
 .content p {
@@ -417,6 +437,13 @@ section p {
   padding: 20px;
   min-height: fit-content;
   font-weight: 500;
+}
+
+.card-body h5{
+  padding: 0;
+  color: black !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
 }
 
 .tag {

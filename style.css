@@ -397,7 +397,7 @@ section p {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   pointer-events: none;
-  margin: -200px 0 0 -100px;
+  margin: -240px 0 0 -150px;
 
 }
 
@@ -501,12 +501,12 @@ section p {
   color: #fff !important;
 }
 
-.tag-pp {
+.tag-app {
   background-color: rgba(0, 0, 88, 1) !important;
   color: #fff !important;
 }
 
-.tag-ps {
+.tag-aps {
   background-color: rgba(0, 29, 52, 1) !important;
   color: #fff !important;
 }
